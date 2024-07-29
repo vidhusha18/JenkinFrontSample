@@ -41,5 +41,11 @@
   },
   "devDependencies": {
     "ajv": "^7.2.4"
+  },
+
+  "jest": {
+    "testMatch": [
+      "**/src/**/*.{test,spec}.{js,jsx,ts,tsx}"
+    ]
   }
 }
