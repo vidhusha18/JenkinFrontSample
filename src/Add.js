@@ -17,24 +17,24 @@ function Add() {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
 
-  // const handleFormSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const response = await axios.post("http://localhost:1112/Customer",  {
-  //       customerName: inputData.customerName,
-  //       customerGender: inputData.customerGender,
-  //       customerService: inputData.customerService,
-  //       appointmentTime: new Date(inputData.appointmentTime).toISOString(),
-  //     });
-  //     console.log(response.data);
-  //     alert("Data added Successfully");
-  //     navigate("/");
-  //     resetForm();
-  //   } catch (error) {
-  //     console.error('Error saving customer:', error);
-  //     alert("Error adding data. Please try again.");
-  //   }
-  // };
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    // try {
+    //   const response = await axios.post("http://localhost:1112/Customer",  {
+    //     customerName: inputData.customerName,
+    //     customerGender: inputData.customerGender,
+    //     customerService: inputData.customerService,
+    //     appointmentTime: new Date(inputData.appointmentTime).toISOString(),
+    //   });
+    //   console.log(response.data);
+    //   alert("Data added Successfully");
+    //   navigate("/");
+    //   resetForm();
+    // } catch (error) {
+    //   console.error('Error saving customer:', error);
+    //   alert("Error adding data. Please try again.");
+    // }
+  };
 
   const resetForm = () => {
     setInputData({

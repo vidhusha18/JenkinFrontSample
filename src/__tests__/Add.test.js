@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Add from './Add';
+import Add from '../Add';
 
 
  
